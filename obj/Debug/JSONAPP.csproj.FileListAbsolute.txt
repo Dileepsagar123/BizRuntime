@@ -1,0 +1,10 @@
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\bin\Debug\JSONAPP.exe.config
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\bin\Debug\JSONAPP.exe
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\bin\Debug\JSONAPP.pdb
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\obj\Debug\JSONAPP.csprojAssemblyReference.cache
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\obj\Debug\JSONAPP.csproj.CoreCompileInputs.cache
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\obj\Debug\JSONAPP.csproj.CopyComplete
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\obj\Debug\JSONAPP.exe
+C:\Users\Dileep\source\repos\JSONAPP\JSONAPP\obj\Debug\JSONAPP.pdb
