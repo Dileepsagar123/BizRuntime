@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        // read from the global registry
+        let id = Symbol.for("id"); // if the symbol did not exist, it is created
+
+        // read it again
+        let idAgain = Symbol.for("id");
+
+        // the same symbol
+        alert( id === idAgain ); // true
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

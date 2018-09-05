@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function sushant() 
+{
+var name = document.forms["RegForm"]["Name"]; 
+
+var phone = document.forms["RegForm"]["Telephone"]; 
+var username = document.forms["RegForm"]["UserName"]; 
+var password = document.forms["RegForm"]["Password"];
+var passwordcheck = /^(?=.[0-9])(?=.[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$/;
+
+if (name.value == "") 
+{
+window.alert("Please enter your name.");
+name.focus();
+return false;
+}
+if (phone.value == "") {
+window.alert("Please enter your telephone number.");
+phone.focus();
+return false;
+}
+if (username.value == "") {
+window.alert("Please enter your username");
+username.focus();
+return false;
+}
+
+if (password.value == "") 
+{
+window.alert("please enter a valid password.");
+password.focus();
+return false;
+}
+if ((password.value).length < 8) {
+window.alert("Password length must be of minimum 8 characters");
+password.focus();
+return false;
+}
+
+//if (password.match(passwordcheck))
+// return true;
+//else {
+// window.alert("The password should contain atleast 2 special character and 2 numbers.");
+// password.focus();
+// return false;
+//}
+if(passwordcheck != Password)
+{
+    alert ("please satisfy all ");
+}
+return true;
+}</script>
+
+</head>
+
+<body>
+<h1 style="text-align: center" > FORM VALIDATION TASK </h1> 
+<form name="RegForm" action="/submit.html" onsubmit="return sushant()" method="post">
+
+<p>Name: <input type="text" size=65 name="Name"> </p><br>
+<p>Telephone: <input type="text" pattern="[0-9]{9,11}" size=65 name="Telephone"> </p><br>
+<p>User Name: <input type="text" size=65 name="UserName"> </p><br>
+<p>Password: <input type="text" size=65 name="Password"> </p><br>
+<p><input type="submit" value="Submit" name="Submit"></p>
+</form>
+</body>
+</html>

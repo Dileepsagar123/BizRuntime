@@ -1,0 +1,19 @@
+<script type="text/javascript">
+
+    let user = {
+        name : "dileep",
+        surname : "sagar",
+        get Fullname(){
+            return `${this.name} ${this.surname} `;
+        },
+        set Fullname(value)
+        {
+             [this.name , this.surname] = value.split(" ");
+        }
+
+    }
+    user.Fullname = "Mohit Kumar";
+
+    alert(user.name);
+    alert(user.surname);
+    </script>

@@ -1,0 +1,25 @@
+<script type="text/javascript">
+
+  let user = {
+    "userName" : "dileep",
+    "age" : 26 ,
+    "address" : "shimla",
+    "email" : "dileepsagar1@gmail.com",
+    "phone" : "8449777583"
+  };
+  delete user.userName;
+  let clone = {};
+  let clone1 = Object.assign("",user) ;
+  document.write(clone1.age)
+  for(var key in user)
+  {
+    clone[key] = user[key];
+  }
+
+for(var prnt in clone)
+{
+
+}
+  
+
+</script>

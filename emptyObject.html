@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Empty Object Sample</title>
+    <script type="text/javascript">
+      let user = new Object();//constructor syntax
+      let user1 ; //empty object literal syntax
+      user1 =  {
+        "name":"dileep",
+        "age" : "25" ,
+        "address":"Shimla",
+
+      };
+      document.write(JSON.stringify(user1) + "<br />");
+      for(var key in user1)
+      {
+        document.write( "\xa0" + key + " : \xa0");
+        document.write( " \xa0" + user1[key] + " ,");
+      }
+      document.write("<br / >");
+     document.write("name6" in user1);
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

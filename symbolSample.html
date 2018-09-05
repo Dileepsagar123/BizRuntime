@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript">
+        // id is a new symbol
+        let id = Symbol();
+
+
+        //      We can also give symbol a description (also called a symbol name), mostly useful for debugging purposes:
+        // id is a symbol with the description "id"
+        let id3 = Symbol("id");
+
+
+        //  Symbols are guaranteed to be unique. Even if we create many symbols with the same description, they are different values. The description is just a label that doesn’t affect anything.
+        //For instance, here are two symbols with the same description – they are not equal:
+ 
+ 
+
+
+
+
+        let id1 = Symbol("id");
+        let id2 = Symbol("id");
+        
+        alert(id1 == id2);
+        //Hidden properties in object 
+        let user = { name: "John" };
+        let id5 = Symbol("id");
+
+        user[id5] = "ID Value";
+        alert( user[id5] ); //let user = { name: "John" };
+        let id6 = Symbol("id");
+
+        user[id6] = "ID Value";
+        alert( user[id6] );  
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

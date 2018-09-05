@@ -1,0 +1,35 @@
+<script>
+
+    let animal = {
+  eats: true
+};
+
+function Rabbit(name) {
+  this.name = name;
+}
+
+Rabbit.prototype = animal;
+
+let rabbit = new Rabbit("White Rabbit"); //  rabbit.__proto__ == animal
+
+alert( rabbit.eats ); // true
+
+function Human(firstName, lastName) {
+
+this.firstName = firstName,
+
+this.lastName = lastName,
+
+this.fullName = function() {
+
+    return this.firstName + " " + this.lastName;
+
+}
+
+}
+var person1 = new Human("dileep","sagar");
+console.log(person1);
+console.log(Human);
+
+alert()
+</script>
