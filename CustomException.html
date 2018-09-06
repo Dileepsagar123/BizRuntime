@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function CustomException()
+        {
+            var num1 = Number(prompt("Enter numerator"));
+            var denominator = Number(prompt("Enter denominator"));
+            try 
+            {
+                if(denominator == 0 )
+                {
+                    throw {
+                        error : document.write( "Divide by zero <br />"),
+                        message : document.write("denominator ca.'t be zero<br />")
+                    };
+                }
+                else
+                {
+                    document.write("Result = " + num1 / denominator + "<br />");
+                }
+            }
+            catch(e)
+            {
+                document.write(e.error);
+                document.write(e.message);
+            }
+        }
+        CustomException();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

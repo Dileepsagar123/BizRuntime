@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var person = function () 
+    {
+
+            var fullName = "Jason Shapiro";
+            var reg = new RegExp(/\d+/);
+
+            return { 
+            setFullName : function (newValue) {
+                if( reg.test(newValue) ) {
+                alert("Invalid Name");
+                }
+                else {
+                fullName = newValue;
+                }
+            },
+            getFullName : function () {
+            return fullName; 
+            }
+            }; // end of the return
+            
+    }(); // Note the '()', this means we're calling the function 
+   // and assigning the *returned object,* instead of 
+   // the *function itself* for the value of 'person.'
+
+alert(person.getFullName());   // Jason Shapiro
+person.setFullName( "Jim White" );
+alert(person.getFullName());  // Jim White
+person.setFullName( 42 ); // Invalid Name; the name is not changed.
+person.fullName = 42;     // Doesn't affect the private fullName variable.
+alert(person.getFullName());  // Jim White is printed again.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

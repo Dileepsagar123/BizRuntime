@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+    var person = {
+        fullName : "Jason Shapiro",
+        setFullName : function (newValue) {
+            var reg = new RegExp(/+/);
+            if( reg.test(newValue) ) {
+            alert("Invalid Name");
+            }
+            else {
+            this.fullName = newValue;
+            }
+        },
+        "getFullName" : function() {
+            return this.fullName;
+        }
+        };
+        
+        alert( person.getFullName() );   // Jason Shapiro
+        person.setFullName( "Jim White" );
+        alert( person.getFullName() );   // Jim White
+        person.setFullName( 42 );        // Invalid Name
+        alert( person.getFullName() );   // Jim White
+        person.setFullName( 42 ); // Invalid Name; the name is not changed.
+        person.fullName = 42;     // No validation is executed; the name is changed and...
+        alert( person.getFullName() );   // ...42 is printed.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

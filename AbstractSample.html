@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var Shape = function()
+        {
+            this.shapeName = "none" ;
+            throw new Error("Can't create instances"); 
+        }
+
+        Shape.prototype.draw = function ()
+        {
+            return "Drwiang " + this.shapeName;
+        }
+        // var shape = new Shape();
+        var Circle = function (shapeName)
+        {
+            this.shapeName = shapeName ;
+        }
+        Circle.prototype = Object.create(Shape.prototype);
+        var circle = new Circle("Big Circle");
+        document.write(circle.draw());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
